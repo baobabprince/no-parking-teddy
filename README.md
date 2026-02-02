@@ -69,6 +69,16 @@ If you want anyone with the link to be able to subscribe to the calendar:
 2.  Click **Run workflow**.
 3.  Check the logs.
 
+### 🔗 Share the Calendar with Others
+
+After making the calendar public, you can share it with others:
+
+| Type | URL |
+|---|---|
+| **View in Browser** | `https://calendar.google.com/calendar/embed?src=15136f57a49bb2811aab2eadc7624fbf11953b21ca9dd55257066a8249557a3@group.calendar.google.com` |
+| **iCal (Apple/Outlook)** | `https://calendar.google.com/calendar/ical/15136f57a49bb2811aab2eadc7624fbf11953b21ca9dd55257066a8249557a3@group.calendar.google.com/public/basic.ics` |
+| **Click to Subscribe** | `https://calendar.google.com/calendar/render?cid=15136f57a49bb2811aab2eadc7624fbf11953b21ca9dd55257066a8249557a3@group.calendar.google.com` |
+
 ## ⚙️ Configuration
 
 ### Changing the Run Frequency
@@ -207,9 +217,9 @@ IAM & Admin → Service Accounts → Create
 
 | סוג | URL |
 |-----|-----|
-| **צפייה בדפדפן** | `https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID` |
-| **iCal (Apple/Outlook)** | `https://calendar.google.com/calendar/ical/YOUR_CALENDAR_ID/public/basic.ics` |
-| **הרשמה בקליק** | `https://calendar.google.com/calendar/render?cid=YOUR_CALENDAR_ID` |
+| **צפייה בדפדפן** | `https://calendar.google.com/calendar/embed?src=15136f57a49bb2811aab2eadc7624fbf11953b21ca9dd55257066a8249557a3@group.calendar.google.com` |
+| **iCal (Apple/Outlook)** | `https://calendar.google.com/calendar/ical/15136f57a49bb2811aab2eadc7624fbf11953b21ca9dd55257066a8249557a3@group.calendar.google.com/public/basic.ics` |
+| **הרשמה בקליק** | `https://calendar.google.com/calendar/render?cid=15136f57a49bb2811aab2eadc7624fbf11953b21ca9dd55257066a8249557a3@group.calendar.google.com` |
 
 ### שלב 3: צור יומן ציבורי (אופציונלי אבל מומלץ!)
 
