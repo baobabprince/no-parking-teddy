@@ -8,6 +8,7 @@ import json
 from datetime import datetime, timedelta
 from typing import List, Dict, Optional
 from google.oauth2.credentials import Credentials
+from google.oauth2 import service_account
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
@@ -42,7 +43,7 @@ class CalendarSync:
                 # For GitHub Actions, use environment variable
                 if os.environ.get('GOOGLE_CREDENTIALS'):
                     creds_info = json.loads(os.environ['GOOGLE_CREDENTIALS'])
-                    creds = Credentials.from_authorized_user_info(creds_info, SCOPES)
+                    creds = service_account.Credentials.from_service_account_info(creds_info, scopes=SCOPES)
                 else:
                     flow = InstalledAppFlow.from_client_secrets_file(
                         self.credentials_path, SCOPES)
