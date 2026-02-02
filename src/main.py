@@ -61,8 +61,13 @@ def main():
     print("📅 Syncing to public calendar...")
     print("="*70)
     
+    calendar_id = os.environ.get('CALENDAR_ID')
+    if not calendar_id:
+        print("❌ CALENDAR_ID environment variable not set. Exiting.")
+        sys.exit(1)
+    
     try:
-        sync = CalendarSync()
+        sync = CalendarSync(calendar_id=calendar_id)
         results = sync.sync_games(teddy_games, dry_run=dry_run)
         
         # Print results
